@@ -1,0 +1,9 @@
+def Count_num(number):
+    number=str(number)
+    s=len(number)
+    
+    if s<=1:
+        return 1
+    return Count_num(number[:s-1])+1
+x=Count_num(1644677542)
+print(x)
